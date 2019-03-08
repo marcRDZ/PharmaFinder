@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingTop="5dp"
+        app:contentPaddingBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_pharmacy_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="TextView"/>
+
+            <TextView
+                android:id="@+id/tv_label_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@+id/tv_pharmacy_name"
+                android:text="@string/lbl_address"/>
+
+            <TextView
+                android:id="@+id/tv_pharmacy_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical|start"
+                android:layout_below="@+id/tv_label_address"
+                android:drawableEnd="@android:drawable/ic_dialog_map"
+                android:drawableRight="@android:drawable/ic_dialog_map"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:text="TextView"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
+
+            <TextView
+                android:id="@+id/tv_label_show_in_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/tv_pharmacy_address"
+                android:text="@string/lbl_show_in_map"/>
+            <TextView
+                android:id="@+id/tv_pharmacy_intervals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_below="@+id/tv_label_show_in_map"
+                android:text="TextView"/>
+
+            <TextView
+                android:id="@+id/tv_pharmacy_contact"
+                android:autoLink="phone"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_pharmacy_intervals"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/iv_pharmacy_contact"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_pharmacy_intervals"
+                android:layout_toStartOf="@+id/tv_pharmacy_contact"
+                android:layout_toLeftOf="@+id/tv_pharmacy_contact"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/oval_gradient_shape"
+                app:srcCompat="@android:drawable/stat_sys_speakerphone" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

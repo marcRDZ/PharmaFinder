@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">PharmaFinder</string>
+
+    <string name="splash_msg">Cargando...</string>
+
+    <string name="lbl_address">Dirección</string>
+
+    <string name="lbl_show_in_map">Mostrar en mapa</string>
+
+    <string name="pharmacies_result_successful">Encontradas %1$d farmacias</string>
+
+    <string name="pharmacies_result_unsuccessful">No se ha encontrado ninguna farmacia</string>
+
+    <string name="pharmacies_db_result">No se ha detectado red. %1$d farmacias encontradas en base de datos</string>
+
+    <string name="rationale_ask" tools:ignore="ExtraTranslation">Esta aplicación no funcionará correctamente sin los permisos requeridos.</string>
+    <string name="rationale_ask_again" tools:ignore="ExtraTranslation">
+        Esta aplicación no funcionará correctamente sin los permisos requeridos.
+        Abrir ajustes de la aplicación para modificar la configuración de los permisos.
+    </string>
+    <string name="title_settings_dialog" tools:ignore="ExtraTranslation">Permisos Requeridos</string>
+</resources>

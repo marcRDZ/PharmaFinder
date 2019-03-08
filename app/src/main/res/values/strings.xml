@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PharmaFinder</string>
+
+    <string name="splash_msg">Loading...</string>
+
+    <string name="lbl_address">Address</string>
+
+    <string name="lbl_show_in_map">Show in Map</string>
+
+    <string name="pharmacies_result_successful">%1$d pharmacies found</string>
+
+    <string name="pharmacies_result_unsuccessful">No pharmacies found</string>
+
+    <string name="pharmacies_db_result">No network detected. %1$d pharmacies found in database</string>
+
+</resources>
